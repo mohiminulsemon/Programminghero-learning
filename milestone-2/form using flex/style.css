@@ -1,0 +1,38 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-right: 2em;
+}
+
+
+
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+
+form input{
+    margin-top: 1em;
+    font-size: 1.5em;
+    padding: 5px 40%;
+}
+
+form input[type="submit"]{
+    border: 0;
+    border-radius: 10px;
+    background-color: goldenrod;
+}

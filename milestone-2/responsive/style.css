@@ -1,0 +1,38 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    border: 5px solid orange;
+    display: flex;
+}
+
+.split {
+    width: 50%;
+    border: 2px solid brown;
+
+    display: flex;
+    justify-content: center;
+}
+
+.split img {
+    width: 50%;
+}
+/* smaller device */
+@media screen and (max-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .split {
+    width: 100%;
+    }
+}
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 922px) {
+    .container {
+        background-color: aquamarine;
+    }
+    
+}

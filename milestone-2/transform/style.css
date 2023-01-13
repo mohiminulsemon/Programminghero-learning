@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.transform{
+    border: 1px solid black;
+}
+.outer{
+    background-color: orange;
+    height: 300px;
+    width: 20%;
+    margin: 30px;
+}
+
+.inner{
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 3em;
+    height: 300px;
+    transform: scale(0.5);
+}
+
+.box-2{
+    transform: scale(0.5) rotate(30deg);
+}
+
+.box-3{
+    transform: scale(0.5) rotate(30deg) translate(200px,100px);
+}

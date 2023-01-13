@@ -1,0 +1,146 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*-------------------
+    top players style
+----------------------  */
+
+.section-title {
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 3px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    height: 56px;
+    width: 56px;
+}
+
+.players-name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* ----------------
+    top blog style 
+   ----------------- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+article {
+    display: flex;
+}
+
+.thumbnail{
+    margin-right: 16px;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+
+.blog-title{
+    font-weight: 500;
+font-size: 20px;
+margin-bottom: 0;
+}
+.blog-author{
+    font-weight: 400;
+font-size: 16px;
+color: #9F9F9F;
+margin-top: 0;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* ---------------------
+    latest courses style 
+   --------------------- */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course-banner img{
+    width: 266px;
+height: 141px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+
+.filled{
+    color: #FFC014;
+}
+.empty{
+    color: #AEAEAE;
+}
+.course-duration{
+   color: #ED6B4F;
+   background: #FEE5DF;
+border-radius: 14.6913px;
+padding: 4px;
+}
+
+/* media query */
+
+@media screen and (max-width: 688px){
+    .container{
+        width: 100%;
+    }
+    .players, .blogs , .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, article{
+        flex-direction: column;
+    }
+}
