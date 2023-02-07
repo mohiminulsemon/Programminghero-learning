@@ -87,12 +87,3 @@ function gemsToDiamond(friend1,friend2,friend3) {
         return "error: please input all parameter";
     }
 }
-console.log(gemsToDiamond(1, 1, 1));
-console.log(gemsToDiamond(1, 1));
-console.log(gemsToDiamond(1, [-4,-9,-5,-33,-55]));
-console.log(gemsToDiamond([-4,-9,-5,-33,-55],[-4,-9,-5,-33,-55],[-4,-9,-5,-33,-55]));
-console.log(gemsToDiamond(20, 200, 50));
-console.log(gemsToDiamond(20, "200", 50));
-console.log(gemsToDiamond(20, "2abc00", 50));
-console.log(gemsToDiamond(100, 5, 1));
-console.log(gemsToDiamond([-4,-9,-5,-33,-55],'hello','hunny'));
