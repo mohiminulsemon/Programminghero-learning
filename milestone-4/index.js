@@ -71,16 +71,28 @@ function findingBadData(number) {
 // A function to generate convertion of gems to diamond 
 
 function gemsToDiamond(friend1,friend2,friend3) {
-    if( friend1 && friend2 && friend3 !== undefined ){
-    let totalDiamond = friend1*21+friend2*32+friend3*43;
-    if (totalDiamond > 2000) {
-        return totalDiamond-2000;
-    } 
-    else {
-        return totalDiamond;
-    } }
-
+    if( (friend1 && friend2 && friend3) !== undefined){
+        if (isNaN(friend1) || isNaN(friend2) || isNaN(friend3)) {
+            return "You should input numbers";
+        }
+        else {
+            let totalDiamond = friend1 * 21 + friend2 * 32 + friend3 * 43;
+            if (totalDiamond > 2000) {
+                return totalDiamond - 2000;
+            } else {
+                return totalDiamond;
+            }
+        } }
     else{
         return "error: please input all parameter";
     }
 }
+console.log(gemsToDiamond(1, 1, 1));
+console.log(gemsToDiamond(1, 1));
+console.log(gemsToDiamond(1, [-4,-9,-5,-33,-55]));
+console.log(gemsToDiamond([-4,-9,-5,-33,-55],[-4,-9,-5,-33,-55],[-4,-9,-5,-33,-55]));
+console.log(gemsToDiamond(20, 200, 50));
+console.log(gemsToDiamond(20, "200", 50));
+console.log(gemsToDiamond(20, "2abc00", 50));
+console.log(gemsToDiamond(100, 5, 1));
+console.log(gemsToDiamond([-4,-9,-5,-33,-55],'hello','hunny'));
